@@ -869,6 +869,13 @@ section,
   border-radius: 5px;
 }
 
+.service-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
 .services .service-item .icon {
   margin: 0 auto;
   width: 100px;

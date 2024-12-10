@@ -182,7 +182,7 @@
               <a href="{{$project->link}}" class="stretched-link">
                 <h3>{{$project->name}}</h3>
               </a>
-              <img src="{{ asset('storage/' . $project->image) }}" class="img-fluid" alt="{{$project->name}}">
+              <img src="{{ asset('storage/' . $project->image) }}"  alt="{{$project->name}}">
               <div class="service-item-content">
 
                 <p>{{$project->description}}</p>
