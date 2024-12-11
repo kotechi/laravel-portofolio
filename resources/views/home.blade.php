@@ -338,28 +338,28 @@
               <!-- Bagian info kontak tetap sama -->
               <div class="col-lg-4">
                 <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                    <i class="bi bi-geo-alt flex-shrink-0"></i>
-                    <div>
-                        <h3>Address</h3>
-                        <p>{{$contacts->address}}</p>
-                    </div>
-                </div>
-
-                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                    <i class="bi bi-telephone flex-shrink-0"></i>
-                    <div>
-                        <h3>Call Us</h3>
-                        <p>{{$contacts->whatsapp}}</p>
-                    </div>
-                </div>
-
-                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                    <i class="bi bi-envelope flex-shrink-0"></i>
-                    <div>
-                        <h3>Email Us</h3>
-                        <p>{{$contacts->gmail}}</p>
-                    </div>
-                </div>
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                      <h3>Address</h3>
+                      <p>{{$contacts->address ?? 'Not provided'}}</p>
+                  </div>
+              </div>
+              
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <div>
+                      <h3>Call Us</h3>
+                      <p>{{$contacts->whatsapp ?? 'Not available'}}</p>
+                  </div>
+              </div>
+              
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                      <h3>Email Us</h3>
+                      <p>{{$contacts->gmail ?? 'No email'}}</p>
+                  </div>
+              </div>
             </div>
               <div class="col-lg-8">
                   <!-- Formulir Kontak -->
