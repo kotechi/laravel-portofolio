@@ -341,7 +341,7 @@
                     <i class="bi bi-geo-alt flex-shrink-0"></i>
                     <div>
                         <h3>Address</h3>
-                        <p>{{$contacts->address}}</p>
+                          <p>{{$contacts->address}}</p>
                     </div>
                 </div>
 
@@ -422,13 +422,7 @@
         <div class="copyright">
           <span>Copyright</span> <strong class="px-1 sitename">Aditiya Fathurrahman</strong> <span>All Rights Reserved</span>
         </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
+
       </div>
     </div>
   </footer>
