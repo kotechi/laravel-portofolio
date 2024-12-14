@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `certifications` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table tugas-budelika-aditiya-db.certifications: ~3 rows (approximately)
+-- Dumping data for table tugas-budelika-aditiya-db.certifications: ~4 rows (approximately)
 INSERT INTO `certifications` (`id`, `name`, `issued_by`, `issued_at`, `description`, `file`, `date`, `created_at`, `updated_at`, `image`) VALUES
 	(1, 'belajar visualisasi data', 'Dicoding', '2023-10-03', 'mempelajarai tentang memvisualisasikan data', 'certifications/1733652775_sertifikat_course_177_3238698_011123094322.pdf', '2024-11-29', '2024-11-28 20:38:09', '2024-12-08 03:28:38', 'certifications/1733653718_Screenshot 2024-12-08 172544.png'),
 	(3, 'memulai dasar pemrograman', 'Dicoding', '2023-09-01', 'kegiatang belajar pemrograman dasar', 'certifications/1733652624_sertifikat dicoding.pdf', '2024-11-29', '2024-11-28 20:41:22', '2024-12-08 03:10:24', 'certifications/1733652624_0001.jpg'),
@@ -74,7 +74,7 @@ CREATE TABLE IF NOT EXISTS `contacts` (
 
 -- Dumping data for table tugas-budelika-aditiya-db.contacts: ~0 rows (approximately)
 INSERT INTO `contacts` (`id`, `name`, `gmail`, `whatsapp`, `address`, `created_at`, `updated_at`) VALUES
-	(1, 'Aditiya Fathurrahman', 'aditiya53op@gmail.com', '+62 82112327021', 'bogor, indonesia', '2024-11-28 20:32:12', '2024-11-28 20:44:25');
+	(1, 'Aditiya Fathurrahman', 'aditiya53op@gmail.com', '+62 82112327021', 'bogor  indonesia', '2024-11-28 20:32:12', '2024-11-28 20:44:25');
 
 -- Dumping structure for table tugas-budelika-aditiya-db.data_keuntungan
 CREATE TABLE IF NOT EXISTS `data_keuntungan` (
@@ -191,7 +191,7 @@ CREATE TABLE IF NOT EXISTS `projects` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table tugas-budelika-aditiya-db.projects: ~4 rows (approximately)
+-- Dumping data for table tugas-budelika-aditiya-db.projects: ~5 rows (approximately)
 INSERT INTO `projects` (`id`, `name`, `description`, `link`, `date`, `created_at`, `updated_at`, `image`) VALUES
 	(4, 'smknid', 'aplikasi mobile yang memungkinkan siswa absen dengan menggunakan tanda tangan dan validasi lokasi', 'https://www.anjay.com', '2024-12-10', '2024-12-10 03:38:03', '2024-12-10 04:34:39', 'projects/1733827790_desain-tanpa-judul.png'),
 	(5, 'prioximaty project', 'game horor 3d unity', 'https://www.example.com', '2024-12-10', '2024-12-10 03:41:03', '2024-12-10 05:23:40', 'projects/1733827810_ic-launcher.png'),
@@ -212,11 +212,14 @@ CREATE TABLE IF NOT EXISTS `sessions` (
   KEY `sessions_last_activity_index` (`last_activity`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table tugas-budelika-aditiya-db.sessions: ~1 rows (approximately)
+-- Dumping data for table tugas-budelika-aditiya-db.sessions: ~4 rows (approximately)
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
+	('7kauXAGkTSvPSLIjuzx0grqH5KF7HtYxOmqWzcm3', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTjRKZ1JoZHUxcGI3dmJpUFpSemVUSFBwdVptZHJmZ1pOSzc4U3JBSCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjY6Imh0dHA6Ly90dWdhcy1idWRlbGlrYS50ZXN0Ijt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1733963918),
 	('8FFGsG6nKNnryQTBzmS8HfEPCULJmCpcZsReN5WX', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiU2dmMTE3c3VsV3I5bHF4RWZFcVJ5dVR4d1FsdTdoY25iNm4yckRNVCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjY6Imh0dHA6Ly90dWdhcy1idWRlbGlrYS50ZXN0Ijt9czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTt9', 1733837123),
 	('dbFcVd7ZcVnpFKU7T2SQ54HXrgFf4DADNGF5st7F', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoiWGhHZkdtYmJIWERHMTFOZzZTMHFDS29lb1JvM3FrU1JjOUI0SW05ViI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjY6Imh0dHA6Ly90dWdhcy1idWRlbGlrYS50ZXN0Ijt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czozOiJ1cmwiO2E6MTp7czo4OiJpbnRlbmRlZCI7czo0MToiaHR0cDovL3R1Z2FzLWJ1ZGVsaWthLnRlc3QvYWRtaW4vcHJvamVjdHMiO31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO30=', 1733839127),
-	('m8yMzdiaCaJY94Tu4lkJ9OhsQoddjdm4GP8DXhLM', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoia3RpSlhjZWlnSmlJQ3NKWER0ZmhmSVRJZjF3QTZCOHpMdkhQOG0ycyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjY6Imh0dHA6Ly90dWdhcy1idWRlbGlrYS50ZXN0Ijt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1733872047);
+	('m8yMzdiaCaJY94Tu4lkJ9OhsQoddjdm4GP8DXhLM', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoia3RpSlhjZWlnSmlJQ3NKWER0ZmhmSVRJZjF3QTZCOHpMdkhQOG0ycyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjY6Imh0dHA6Ly90dWdhcy1idWRlbGlrYS50ZXN0Ijt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1733872047),
+	('rJQpWjbvCMLeceplN2qTrHxVnewZUXPygOD5gBQw', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiQXA5MjEyRDhjdlVXNXYzcFZtQzJWUXA3Uk0xMXBRZURISVRiNm42ayI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjY6Imh0dHA6Ly90dWdhcy1idWRlbGlrYS50ZXN0Ijt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1733879885),
+	('Z1rX465yVWFJM2DeUHfLuVBPHqvp2lm7vOB11R5D', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiQzZ4YzhwTXpCT1dXTEsyeFQwNENhUUUyYkk1dlI5cHB0dGFzakJDWCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDQ6Imh0dHA6Ly90dWdhcy1idWRlbGlrYS50ZXN0L2FkbWluL2NlcnRpZmljYXRlIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTt9', 1733970286);
 
 -- Dumping structure for table tugas-budelika-aditiya-db.tbl_porto
 CREATE TABLE IF NOT EXISTS `tbl_porto` (

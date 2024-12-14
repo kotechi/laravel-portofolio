@@ -30,14 +30,15 @@
     .portfolio-item img, .service-item img {
       width: 100%;
       height: 300px; /* Fixed height for all images */
-      object-fit: cover; /* Ensures images cover the area without distortion */
+      object-fit: contain; /* Ensures entire image is visible without cropping */
+      background-color: #f4f4f4; /* Optional: adds a light background to see the full image */
     }
   </style>
 </head>
 
 <body class="index-page overflow-x-hidden">
 
-  <header id="header" class="header d-flex flex-column justify-content-center">
+  <header id="header" class="header my d-flex flex-column justify-content-center">
 
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
@@ -154,7 +155,7 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
             @foreach ($certificates as $certificate)
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="{{ asset('storage/' . $certificate->image) }}" class="img-fluid" alt="{{$certificate->name}}">
+              <img src="{{ asset('storage/' . $certificate->image) }}" class="img-fluid " alt="{{$certificate->name}}">
               <div class="portfolio-info">
                 <h4>{{$certificate->name}}</h4>
                 <p>{{$certificate->description}}</p>
